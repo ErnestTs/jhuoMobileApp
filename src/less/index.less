@@ -1,0 +1,317 @@
+html,body{
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+// -------------头部--------------------
+@headerHeight: 0.68rem;
+header{
+    width: 100%;
+    height: @headerHeight;
+    padding: 0.1rem 0;
+    background: #fff;
+    line-height: @headerHeight;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+
+    img{
+        width: 0.4rem;
+        height: 0.4rem;
+    }
+
+    div{
+        float: left;
+    }
+    .logoBox{
+        margin-left: 0.4rem;
+        width: 0.4rem;
+        height: 0.4rem;
+    }
+    .searchBox{
+        margin-left: 0.16rem;
+        height: 100%;
+        width: 5.28rem;
+        padding-left: 0.3rem;
+        background-color: #f2f2f2;
+        overflow: hidden;
+        white-space: nowrap;
+        border-radius: 0.05rem;
+
+        input{
+            text-indent: 0.2rem;
+            border: 0;
+            height: 100%;
+            width:100%;
+            background: #f2f2f2;
+        }
+    }
+    i{
+        font-size: 0.4rem;
+        color: #323232;
+    }
+    .ask{
+        margin-left: 0.18rem
+    }
+}
+// -------------头部结束--------------------
+
+.main{
+    margin-top: @headerHeight;
+}
+
+// -------------banner--------------------
+.banner{
+    width: 100%;
+    height: 3.48rem;
+    line-height: 3.48rem;
+    text-align: center;
+    overflow: hidden;
+    background-color: greenyellow;
+}
+.marqueeBox{
+    width: 100%;
+    height: 0.3rem;
+    padding: 0.2rem 0;
+    overflow: hidden;
+    background-color: #fff;
+
+    .marqueeTitle{
+        padding: 0 0.21rem;
+        margin-left:  0.09rem;
+        line-height: 0.3rem;
+        border-right: 0.02rem solid #dfdfdf;
+        float: left;
+
+        span{
+            font-size: 0.22rem;
+            font-weight: bold;
+            color: #323232;
+            float: left;
+        }
+        .marqueeYellow{
+            display: block;
+            height: 0.3rem;
+            width: 0.6rem;
+            border-radius: 0.03rem;
+            background-color: #ffc700;
+            color: #ffffff;
+            text-align: center;
+            margin-left: 0.08rem;
+        }
+    }
+    .marqueeText{
+        line-height: 0.3rem;
+        padding-left: 0.18rem;
+        position: relative;
+        float: left;
+        color: #434343;
+        
+
+        .marqueeTextBall{
+            background-color: #f4bd39;
+            margin-top: 0.11rem;
+            float: left;
+            width: 0.08rem;
+            height: 0.08rem;
+            display: block;
+            border-radius: 50%;
+        }
+        .marqueeTextList{
+            float: left;
+            margin-left: 0.22rem;
+        }
+    }
+}
+// -------------banner结束--------------------
+
+// -------------今日新品----------------------
+.todayNew{
+    width: 100%;
+    height: 3.78rem;
+    background-color: #fff;
+    margin-top: 0.2rem;
+
+    .todayNewLeft{
+        width: 50%;
+        height: 100%;
+        float: left;
+
+        .TNLtitle{
+            background-color: #fdb64b;
+            text-align: center;
+            border-radius: 0.14rem e("/")50%;
+            padding:0 0.1rem;
+            width: 2.03rem;
+            margin:0.77rem auto;
+            margin-bottom: 0.25rem;
+            box-shadow: #fbce8a 0 0.05rem 0.1rem 0;
+
+            span{
+                color: #fff;
+            }
+
+            .TNLtitleBall{
+                display: block;
+                width: 0.1rem;
+                height: 0.1rem;
+                border-radius: 50%;
+                background-color: #fff;
+                margin-top: 0.15rem;
+            }
+        }
+        .TNLtext{
+            color: #b0b0b0;
+            text-align: center;
+        }
+        .TNLimgBox{
+            width: 2.03rem;
+            height: 1.94rem;
+            margin: 0.09rem auto;
+            margin-top: 0;
+            overflow: hidden;
+            background-color: red;
+        }
+    }
+
+    .todayNewRight{
+        border-left: 0.01rem #dfdfdf solid;
+        box-sizing: border-box;
+        width: 50%;
+        height: 100%;
+        float: left;
+
+        
+        .TNRLeft{
+            width: 1.92rem;
+            text-align: center;
+            padding-top: 0.41rem;
+            h4{
+                line-height: 0.52rem;
+                font-size: 0.28rem;
+                font-weight: bold;
+            }
+            div{
+                span{
+                    display: block;
+                    width: 0.16rem;
+                    height: 0.04rem;
+                    background: #feba00;
+                    margin: auto;
+                }
+            }
+            h5{
+                line-height: 0.45rem;
+                font-size: 0.23rem;
+                color: #b0b0b0;
+            }
+        }
+        .TNRRight{
+            padding: 0.41rem 0.25rem 0.47rem 0;
+            
+            .TNRRightImgBox{
+                overflow: hidden;
+                height: 1.01rem;
+                width: 1.53rem;
+                background-color: #f4bd39;
+            }
+        }
+
+        .TNRtop{
+            width: 100%;
+            height: 50%;
+
+        }
+        .TNRbottom{
+            width: 100%;
+            height: 50%;
+            box-sizing: border-box;
+            border-top: 0.01rem #dfdfdf solid;
+        }
+    }
+
+}
+// -------------今日新品结束------------------
+
+// -------------特价商品---------------------
+.specialoffer{
+    margin-top: 0.34rem;
+    margin-bottom: 0.1rem;
+    .SOtitle{
+        display: block;
+        height: 2.24rem;
+        background: url(../images/specialoffer.png) no-repeat;
+        background-size:cover;
+        position: relative;
+
+        .actionGo{
+            width: 1.4rem;
+            height: 1.4rem;
+            border-radius: 50%;
+            background: url(../images/actionGo.png);
+            background-size:cover;
+            position: absolute;
+            animation:1s changeSize infinite;
+            left: 5.63rem;
+            top: 0.77rem;
+        }
+
+        @keyframes changeSize {
+            0%{transform:scale(1,1)}
+            50%{transform:scale(0.75,0.75)}
+            100%{transform:scale(1,1)}
+        }
+    }
+}
+// -------------特价商品结束------------------
+
+// -------------男女专区----------------------
+.genderBox{
+    background-color: #fff;
+
+    .gendertitle{
+        padding: 0 2rem;
+        position: relative;
+        height: 0.97rem;
+
+        .genderLine{
+            border-top: 0.01rem solid #323232;
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            width: 3.51rem;
+        }
+        h3{
+            line-height: 0.97rem;
+            font-size: 0.28rem;
+            position: absolute;
+            width: 2.5rem;
+            left: 50%;
+            transform:translateX(-50%); 
+            text-align: center;
+            background-color: #fff;
+            z-index: 2;
+        }
+    }
+}
+// -------------男女专区结束------------------
+
+// -------------footer--------------------
+.footerBox{
+    height: 1.22rem;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+
+    .footerBtn{
+        display: block;
+        float: left;
+        width: 25%;
+        text-align: center;
+        div{
+            margin-top: 0.4rem;
+        }
+        i{
+            font-size: 0.4rem;
+            margin-bottom: 0.15rem;
